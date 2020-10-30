@@ -1,0 +1,569 @@
+{
+  "items" : [ {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/06jSjpC81wzjoUoE61Fhdn"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 60484
+    },
+    "genres" : [ "anime", "anime rock" ],
+    "href" : "https://api.spotify.com/v1/artists/06jSjpC81wzjoUoE61Fhdn",
+    "id" : "06jSjpC81wzjoUoE61Fhdn",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/3348e3e7931483b84737b32bd47c6c667d4f6f3f",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/449dd8111053bcb2d5fd5e6f9c5b5a9642d45e9e",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/e067791eaf1c123e94111b781e332355572f719d",
+      "width" : 160
+    } ],
+    "name" : "Nanawoakari",
+    "popularity" : 53,
+    "type" : "artist",
+    "uri" : "spotify:artist:06jSjpC81wzjoUoE61Fhdn"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/4UK2Lzi6fBfUi9rpDt6cik"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 825289
+    },
+    "genres" : [ "j-pop" ],
+    "href" : "https://api.spotify.com/v1/artists/4UK2Lzi6fBfUi9rpDt6cik",
+    "id" : "4UK2Lzi6fBfUi9rpDt6cik",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/f4c860cd839b2883eccb2c2ddd14ec578a7d3977",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/4e8eff3b5cac8521cf6d2331f256c39edf2674cb",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/6af0b7c596a7882e93a0019e0de5fc49c41134d4",
+      "width" : 160
+    } ],
+    "name" : "ヨルシカ",
+    "popularity" : 73,
+    "type" : "artist",
+    "uri" : "spotify:artist:4UK2Lzi6fBfUi9rpDt6cik"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/38WbKH6oKAZskBhqDFA8Uj"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 403534
+    },
+    "genres" : [ "j-pop" ],
+    "href" : "https://api.spotify.com/v1/artists/38WbKH6oKAZskBhqDFA8Uj",
+    "id" : "38WbKH6oKAZskBhqDFA8Uj",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/d40da1cb80895eb597687e6e3659045575e53503",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/939b0db6b4c1b6f7426ad7faa2dabd3e265dd2d7",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/71343a9eaec76d4b281878f02c3c60f8d25eb5ad",
+      "width" : 160
+    } ],
+    "name" : "ZUTOMAYO",
+    "popularity" : 65,
+    "type" : "artist",
+    "uri" : "spotify:artist:38WbKH6oKAZskBhqDFA8Uj"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/0jP8a2o9Mw5qYoUz1SnQ2A"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 49779
+    },
+    "genres" : [ "kawaii future bass" ],
+    "href" : "https://api.spotify.com/v1/artists/0jP8a2o9Mw5qYoUz1SnQ2A",
+    "id" : "0jP8a2o9Mw5qYoUz1SnQ2A",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/b580400fe42b933fe12bf313501176767a8d9393",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/94c54c48dbf2ff40180bafbb0effe20f17b42033",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/87d0c9a8f19b160afd0f7a61439a1208ab866afe",
+      "width" : 160
+    } ],
+    "name" : "YUC'e",
+    "popularity" : 48,
+    "type" : "artist",
+    "uri" : "spotify:artist:0jP8a2o9Mw5qYoUz1SnQ2A"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/7rpKUJ0AnklJ8q9nIPVSpZ"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 139508
+    },
+    "genres" : [ "anime rock", "japanese electropop" ],
+    "href" : "https://api.spotify.com/v1/artists/7rpKUJ0AnklJ8q9nIPVSpZ",
+    "id" : "7rpKUJ0AnklJ8q9nIPVSpZ",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/f15dfa3fcb87a822812b08e407831c79d740c2ad",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/46d6f8803cb82d8c212c5327b677588adf945419",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/31cfb0b6a82bbfd71a5f468b36c2f812518382e8",
+      "width" : 160
+    } ],
+    "name" : "Reol",
+    "popularity" : 63,
+    "type" : "artist",
+    "uri" : "spotify:artist:7rpKUJ0AnklJ8q9nIPVSpZ"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/18NNCsbb6T0purrSKSRyuG"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 34761
+    },
+    "genres" : [ "denpa-kei", "kawaii future bass" ],
+    "href" : "https://api.spotify.com/v1/artists/18NNCsbb6T0purrSKSRyuG",
+    "id" : "18NNCsbb6T0purrSKSRyuG",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/5f98ac3ddc3d83db6ec474d102cbecc3fa68aad0",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/2204e89ffb65b6a23c51ce20081b9e9d97e7d8d7",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/1d4a18fd2e548f6dd44fa79cf0a4c94ab1141965",
+      "width" : 160
+    } ],
+    "name" : "HoneyComeBear",
+    "popularity" : 46,
+    "type" : "artist",
+    "uri" : "spotify:artist:18NNCsbb6T0purrSKSRyuG"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/0Pn9eKty96tdakwQBYPWu7"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 19661
+    },
+    "genres" : [ "alt-idol", "denpa-kei", "idol rock" ],
+    "href" : "https://api.spotify.com/v1/artists/0Pn9eKty96tdakwQBYPWu7",
+    "id" : "0Pn9eKty96tdakwQBYPWu7",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b2735cdf0b6f57fc6b871984b641",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e025cdf0b6f57fc6b871984b641",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d000048515cdf0b6f57fc6b871984b641",
+      "width" : 64
+    } ],
+    "name" : "CY8ER",
+    "popularity" : 40,
+    "type" : "artist",
+    "uri" : "spotify:artist:0Pn9eKty96tdakwQBYPWu7"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/3Ath9xfI4WBdrZPFQ4VX9A"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 7597
+    },
+    "genres" : [ "anime" ],
+    "href" : "https://api.spotify.com/v1/artists/3Ath9xfI4WBdrZPFQ4VX9A",
+    "id" : "3Ath9xfI4WBdrZPFQ4VX9A",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/eb18ebe05ab9b3b9606b349d17500d9da7ec162c",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/8108eb04d83f5a6ec6f17eab1983f0e956d877ed",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/90f258888d146df431243938a8567eb45b3d21b6",
+      "width" : 160
+    } ],
+    "name" : "鈴木みのり",
+    "popularity" : 34,
+    "type" : "artist",
+    "uri" : "spotify:artist:3Ath9xfI4WBdrZPFQ4VX9A"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/6kgXeMO4kd68uf4oEFHRS1"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 16251
+    },
+    "genres" : [ ],
+    "href" : "https://api.spotify.com/v1/artists/6kgXeMO4kd68uf4oEFHRS1",
+    "id" : "6kgXeMO4kd68uf4oEFHRS1",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/b4f4de316ba61dc0617626207d0df86531f6cad4",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/1dc60d3cd6c385d7b5425f64b466df97cd870d3b",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/b24697aaa2598b788b7880d7bebcc103c4c2844e",
+      "width" : 160
+    } ],
+    "name" : "ORESAMA",
+    "popularity" : 41,
+    "type" : "artist",
+    "uri" : "spotify:artist:6kgXeMO4kd68uf4oEFHRS1"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/1GQptL2kOEsfMXerW4OjMT"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 15757
+    },
+    "genres" : [ "anime" ],
+    "href" : "https://api.spotify.com/v1/artists/1GQptL2kOEsfMXerW4OjMT",
+    "id" : "1GQptL2kOEsfMXerW4OjMT",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/411e95b4db0906dea518aedd337eee3d8e307a61",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/085b7a00f94364f5c47a9eb74a7c45dcb72e57d9",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/a34daac311f50634ad286e1a95fa9a5d388a8d1c",
+      "width" : 160
+    } ],
+    "name" : "nano.RIPE",
+    "popularity" : 48,
+    "type" : "artist",
+    "uri" : "spotify:artist:1GQptL2kOEsfMXerW4OjMT"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/1aP2vfcs2YyjD0uKGHgHVH"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 18640
+    },
+    "genres" : [ ],
+    "href" : "https://api.spotify.com/v1/artists/1aP2vfcs2YyjD0uKGHgHVH",
+    "id" : "1aP2vfcs2YyjD0uKGHgHVH",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b2737eb0b6f27578d87476a12667",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e027eb0b6f27578d87476a12667",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d000048517eb0b6f27578d87476a12667",
+      "width" : 64
+    } ],
+    "name" : "Reol",
+    "popularity" : 52,
+    "type" : "artist",
+    "uri" : "spotify:artist:1aP2vfcs2YyjD0uKGHgHVH"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/5htVtReJ3NAwcAdxdHpim3"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 250859
+    },
+    "genres" : [ "anime", "anime score", "j-pop girl group", "otacore" ],
+    "href" : "https://api.spotify.com/v1/artists/5htVtReJ3NAwcAdxdHpim3",
+    "id" : "5htVtReJ3NAwcAdxdHpim3",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/b85cc05b3bc1e4049b2f5f3ffd551b6f85c0a3e5",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/33555b340f16fe60bd8688de2f2b99dca37a71d4",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/88093c533c7e8cfbdbc4cc2ad0f9f294cc3a87a2",
+      "width" : 160
+    } ],
+    "name" : "ClariS",
+    "popularity" : 57,
+    "type" : "artist",
+    "uri" : "spotify:artist:5htVtReJ3NAwcAdxdHpim3"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2j00CVYTPx6q9ANbmB2keb"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 120044
+    },
+    "genres" : [ "denpa-kei", "kawaii future bass" ],
+    "href" : "https://api.spotify.com/v1/artists/2j00CVYTPx6q9ANbmB2keb",
+    "id" : "2j00CVYTPx6q9ANbmB2keb",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/964e121e38a7db849916abd6ad450a9fb5e2011e",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/b6b49b5a7ecf53ebfe0c23cfa352e8988090974b",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/f3952f3565162ca5966200bb9d1afdea9436018a",
+      "width" : 160
+    } ],
+    "name" : "Yunomi",
+    "popularity" : 56,
+    "type" : "artist",
+    "uri" : "spotify:artist:2j00CVYTPx6q9ANbmB2keb"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/3DiDSECUqqY1AuBP8qtaIa"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 8011706
+    },
+    "genres" : [ "neo soul", "pop", "r&b", "urban contemporary" ],
+    "href" : "https://api.spotify.com/v1/artists/3DiDSECUqqY1AuBP8qtaIa",
+    "id" : "3DiDSECUqqY1AuBP8qtaIa",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/f603978d2974c3132fc13202f8555305dbd71710",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/a1f6edee42cee2dbef24aec64068efe51d4d0fc6",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/6d7dc52fb3fe43800cf45bfb6afec5d2b338c17b",
+      "width" : 160
+    } ],
+    "name" : "Alicia Keys",
+    "popularity" : 84,
+    "type" : "artist",
+    "uri" : "spotify:artist:3DiDSECUqqY1AuBP8qtaIa"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/0bkkiFN0ghGl4j9aLi3oQx"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 41645
+    },
+    "genres" : [ "denpa-kei", "kawaii future bass" ],
+    "href" : "https://api.spotify.com/v1/artists/0bkkiFN0ghGl4j9aLi3oQx",
+    "id" : "0bkkiFN0ghGl4j9aLi3oQx",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/9edd88a89d96bd0d8778e56f5dd05d553eff5b3e",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/65a127e03c74e1d07f6cf6bc6b034fdff59276cb",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/9469fd7b8779535a90cbc8da6c0ebce9d94ce3f1",
+      "width" : 160
+    } ],
+    "name" : "Nanahira",
+    "popularity" : 51,
+    "type" : "artist",
+    "uri" : "spotify:artist:0bkkiFN0ghGl4j9aLi3oQx"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/2wIVse2owClT7go1WT98tk"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 1457695
+    },
+    "genres" : [ "dance pop", "hip hop", "hip pop", "pop", "pop rap", "r&b", "urban contemporary", "virginia hip hop" ],
+    "href" : "https://api.spotify.com/v1/artists/2wIVse2owClT7go1WT98tk",
+    "id" : "2wIVse2owClT7go1WT98tk",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ccbbf5f1d3023fd27ddbb84872853148f12e5687",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/9ffedadd75494a846f4fc529eed6672d0c6632a4",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/a9e72ae10b8b4cedaae325eb5881410d845ede7a",
+      "width" : 160
+    } ],
+    "name" : "Missy Elliott",
+    "popularity" : 77,
+    "type" : "artist",
+    "uri" : "spotify:artist:2wIVse2owClT7go1WT98tk"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/6BzlN4V17m7ogeItP4CNN5"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 21322
+    },
+    "genres" : [ "anime" ],
+    "href" : "https://api.spotify.com/v1/artists/6BzlN4V17m7ogeItP4CNN5",
+    "id" : "6BzlN4V17m7ogeItP4CNN5",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/1414f71dea2ee88f0541746046c0130749acef67",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/38483f632fad388522b91f6f483f27234af4917a",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/d1884ff9c8398029de3622280f17eef2acafa3fb",
+      "width" : 160
+    } ],
+    "name" : "YuNi",
+    "popularity" : 42,
+    "type" : "artist",
+    "uri" : "spotify:artist:6BzlN4V17m7ogeItP4CNN5"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/4bwIf0yXJf0F9AmOl2J78M"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 60718
+    },
+    "genres" : [ "denpa-kei", "rhythm game" ],
+    "href" : "https://api.spotify.com/v1/artists/4bwIf0yXJf0F9AmOl2J78M",
+    "id" : "4bwIf0yXJf0F9AmOl2J78M",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/99365f3e3a9425c14953de39dbefba46e80d4c80",
+      "width" : 640
+    }, {
+      "height" : 320,
+      "url" : "https://i.scdn.co/image/822e9547a31522edd5d33121b6f0bd8d5caa6d01",
+      "width" : 320
+    }, {
+      "height" : 160,
+      "url" : "https://i.scdn.co/image/2e7c5896153ef5dcfe0ccb82308dc923a46ae50d",
+      "width" : 160
+    } ],
+    "name" : "Camellia",
+    "popularity" : 56,
+    "type" : "artist",
+    "uri" : "spotify:artist:4bwIf0yXJf0F9AmOl2J78M"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/0NT8fqhPoKJrd038u1Qumz"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 24546
+    },
+    "genres" : [ "otacore" ],
+    "href" : "https://api.spotify.com/v1/artists/0NT8fqhPoKJrd038u1Qumz",
+    "id" : "0NT8fqhPoKJrd038u1Qumz",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b273730cc8eb459c92944233e891",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e02730cc8eb459c92944233e891",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d00004851730cc8eb459c92944233e891",
+      "width" : 64
+    } ],
+    "name" : "物語シリーズ",
+    "popularity" : 63,
+    "type" : "artist",
+    "uri" : "spotify:artist:0NT8fqhPoKJrd038u1Qumz"
+  }, {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/artist/4yKulirvdQ5I9kDFJPv5rI"
+    },
+    "followers" : {
+      "href" : null,
+      "total" : 13578
+    },
+    "genres" : [ "denpa-kei", "kawaii future bass" ],
+    "href" : "https://api.spotify.com/v1/artists/4yKulirvdQ5I9kDFJPv5rI",
+    "id" : "4yKulirvdQ5I9kDFJPv5rI",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/ab67616d0000b2734b14441db91054c9c8f553fb",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ab67616d00001e024b14441db91054c9c8f553fb",
+      "width" : 300
+    }, {
+      "height" : 64,
+      "url" : "https://i.scdn.co/image/ab67616d000048514b14441db91054c9c8f553fb",
+      "width" : 64
+    } ],
+    "name" : "Happy Kuru Kuru",
+    "popularity" : 32,
+    "type" : "artist",
+    "uri" : "spotify:artist:4yKulirvdQ5I9kDFJPv5rI"
+  } ],
+  "total" : 50,
+  "limit" : 20,
+  "offset" : 0,
+  "previous" : null,
+  "href" : "https://api.spotify.com/v1/me/top/artists",
+  "next" : "https://api.spotify.com/v1/me/top/artists?limit=20&offset=20"
+}

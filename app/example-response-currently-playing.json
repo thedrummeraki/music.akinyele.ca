@@ -1,0 +1,99 @@
+{
+  "timestamp" : 1604078121266,
+  "context" : null,
+  "progress_ms" : 75265,
+  "item" : {
+    "album" : {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/1k5UEOU4igPC0NoHjEekha"
+        },
+        "href" : "https://api.spotify.com/v1/artists/1k5UEOU4igPC0NoHjEekha",
+        "id" : "1k5UEOU4igPC0NoHjEekha",
+        "name" : "Milkoi",
+        "type" : "artist",
+        "uri" : "spotify:artist:1k5UEOU4igPC0NoHjEekha"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/4L5K9BR3qaZQw8QAoMBUta"
+        },
+        "href" : "https://api.spotify.com/v1/artists/4L5K9BR3qaZQw8QAoMBUta",
+        "id" : "4L5K9BR3qaZQw8QAoMBUta",
+        "name" : "Nyarons",
+        "type" : "artist",
+        "uri" : "spotify:artist:4L5K9BR3qaZQw8QAoMBUta"
+      } ],
+      "available_markets" : [ "AD", "AE", "AL", "AR", "AT", "AU", "BA", "BE", "BG", "BH", "BO", "BR", "BY", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HR", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "KZ", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MK", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "RS", "RU", "SA", "SE", "SG", "SI", "SK", "SV", "TH", "TN", "TR", "TW", "UA", "US", "UY", "VN", "XK", "ZA" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5UyYATMMe9PsVUW4QSk4VD"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5UyYATMMe9PsVUW4QSk4VD",
+      "id" : "5UyYATMMe9PsVUW4QSk4VD",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b27307899a8880f48640ad0a6f67",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e0207899a8880f48640ad0a6f67",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d0000485107899a8880f48640ad0a6f67",
+        "width" : 64
+      } ],
+      "name" : "Lab",
+      "release_date" : "2020-02-24",
+      "release_date_precision" : "day",
+      "total_tracks" : 1,
+      "type" : "album",
+      "uri" : "spotify:album:5UyYATMMe9PsVUW4QSk4VD"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/1k5UEOU4igPC0NoHjEekha"
+      },
+      "href" : "https://api.spotify.com/v1/artists/1k5UEOU4igPC0NoHjEekha",
+      "id" : "1k5UEOU4igPC0NoHjEekha",
+      "name" : "Milkoi",
+      "type" : "artist",
+      "uri" : "spotify:artist:1k5UEOU4igPC0NoHjEekha"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/4L5K9BR3qaZQw8QAoMBUta"
+      },
+      "href" : "https://api.spotify.com/v1/artists/4L5K9BR3qaZQw8QAoMBUta",
+      "id" : "4L5K9BR3qaZQw8QAoMBUta",
+      "name" : "Nyarons",
+      "type" : "artist",
+      "uri" : "spotify:artist:4L5K9BR3qaZQw8QAoMBUta"
+    } ],
+    "available_markets" : [ "AD", "AE", "AL", "AR", "AT", "AU", "BA", "BE", "BG", "BH", "BO", "BR", "BY", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HR", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "KZ", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MK", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "RS", "RU", "SA", "SE", "SG", "SI", "SK", "SV", "TH", "TN", "TR", "TW", "UA", "US", "UY", "VN", "XK", "ZA" ],
+    "disc_number" : 1,
+    "duration_ms" : 238125,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "QM42K2055315"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/1G7UezdxCxZCbNW9PAicx8"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/1G7UezdxCxZCbNW9PAicx8",
+    "id" : "1G7UezdxCxZCbNW9PAicx8",
+    "is_local" : false,
+    "name" : "Lab",
+    "popularity" : 39,
+    "preview_url" : null,
+    "track_number" : 1,
+    "type" : "track",
+    "uri" : "spotify:track:1G7UezdxCxZCbNW9PAicx8"
+  },
+  "currently_playing_type" : "track",
+  "actions" : {
+    "disallows" : {
+      "resuming" : true
+    }
+  },
+  "is_playing" : true
+}
