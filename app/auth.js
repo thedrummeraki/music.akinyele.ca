@@ -10,7 +10,7 @@ const clientID = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
 const clientIDSecret = `${clientID}:${clientSecret}`;
 
-const client = redis.createClient();
+const client = redis.createClient(process.env.REDIS_URL);
 client.on("error", function (error) {
   console.error('Redis error', error);
 });
