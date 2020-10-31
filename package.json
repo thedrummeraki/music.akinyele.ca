@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "pg": "^8.4.2",
-    "sequelize": "^6.3.5"
-  }
-}

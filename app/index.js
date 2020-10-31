@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios').default;
-const requestHTTP = require('request');
 const qs = require('qs');
+const auth = require('./auth');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -28,11 +28,7 @@ app.use((_, res, next) => {
   next();
 });
 
-app.get('/api/latest', (req, res) => {
-  res.send({message: 'this works!'});
-});
-
-app.get('/authorize', (req, res) => {
+app.get('/authorize', (_, res) => {
   const authorizeURLParams = [
     `client_id=${clientID}`,
     'response_type=code',
@@ -45,6 +41,90 @@ app.get('/authorize', (req, res) => {
   } else {
     res.redirect(`https://accounts.spotify.com/authorize?${authorizeURLParams}`);
   }
+});
+
+app.get('/top/artists', (_, res) => {
+  auth.request('/top/artists')
+    .then(response => {
+      res.send(
+        response.items.map(item => ({
+          id: item.id,
+          name: item.name,
+          img: item.images.length > 0 && item.images[0].url,
+          genres: item.genres,
+        }))
+      )
+    })
+    .catch(error => {
+      console.error('error', error);
+      res.send({ success: false, error: error });
+    })
+});
+
+app.get('/top/tracks', (_, res, next) => {
+  auth.request('/top/tracks')
+    .then(response => {
+      res.send(
+        response.items.map(item => ({
+          id: item.id,
+          name: item.name,
+          album: {
+            id: item.album.id,
+            name: item.album.name,
+            img: item.album.images[0].url,
+          },
+          artists: item.artists.map(artist => artist.name),
+        }))
+      );
+    })
+    .catch(error => {
+      console.error(error);
+      res.send({ success: false, error: error });
+    });
+});
+
+app.get('/top/genres', (_, res) => {
+  auth.request('/top/artists')
+    .then(response => {
+      const genres = response.items.map(item => item.genres).flat().reduce((result, value) => {
+        result[value] = (result[value] || 0) + 1;
+        return result;
+      }, {});
+
+      const topGenres = Object.fromEntries(
+        Object.entries(genres).sort(([, a], [, b]) => b - a)
+      );
+
+      res.send(Object.keys(topGenres));
+    })
+    .catch(error => {
+      console.error('error', error);
+      res.send({ success: false, error: error });
+    })
+});
+
+app.get('/playing/now', (_, res) => {
+  auth.request('/player/currently-playing')
+    .then(response => {
+      const track = response.item;
+
+      res.send({
+        id: track.id,
+        at: track.timestamp,
+        progress: (response.progress_ms / track.duration_ms) * 100,
+        name: track.name,
+        preview_url: track.preview_url,
+        artists: track.artists.map(artist => artist.name),
+        album: {
+          name: track.album.name,
+          image: track.album.images[0],
+        },
+      })
+    })
+    .catch(error => {
+      console.error('error', error);
+      res.send({ success: false, error: error });
+    })
 });
 
 app.get(redirectPath, (req, res) => {
@@ -72,7 +152,7 @@ app.get(redirectPath, (req, res) => {
       data: qs.stringify(authorizationBody),
       headers: authorizationHeaders,
     }).then(response => {
-      console.log('Response', response.data);
+      auth.saveTokens(response.data);
 
       res.send({
         success: true,
