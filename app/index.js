@@ -114,7 +114,10 @@ app.get('/playing/now', (_, res) => {
         progress: (response.progress_ms / track.duration_ms) * 100,
         name: track.name,
         preview_url: track.preview_url,
-        artists: track.artists.map(artist => artist.name),
+        artists: track.artists.map(artist => ({
+          name: artist.name,
+          id: artist.id,
+        })),
         album: {
           name: track.album.name,
           image: track.album.images[0],
