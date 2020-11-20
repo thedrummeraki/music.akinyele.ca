@@ -107,22 +107,33 @@ app.get('/playing/now', (_, res) => {
   auth.request('/player/currently-playing')
     .then(response => {
       const track = response.item;
+      var result;
 
-      res.send({
-        id: track.id,
-        at: track.timestamp,
-        progress: (response.progress_ms / track.duration_ms) * 100,
-        name: track.name,
-        preview_url: track.preview_url,
-        artists: track.artists.map(artist => ({
-          name: artist.name,
-          id: artist.id,
-        })),
-        album: {
-          name: track.album.name,
-          image: track.album.images[0],
-        },
-      })
+      if (track) {
+        result = {
+          id: track.id,
+          at: track.timestamp,
+          progress: (response.progress_ms / track.duration_ms) * 100,
+          playing: response.is_playing,
+          name: track.name,
+          preview_url: track.preview_url,
+          artists: track.artists.map(artist => ({
+            name: artist.name,
+            id: artist.id,
+          })),
+          album: {
+            name: track.album.name,
+            image: track.album.images[0],
+          },
+        }
+      } else {
+        result = {
+          playing: false,
+        }
+      }
+
+      result.success = true;
+      res.send(result);
     })
     .catch(error => {
       console.error('error', error);
