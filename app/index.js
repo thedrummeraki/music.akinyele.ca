@@ -61,8 +61,11 @@ app.get('/top/artists', (_, res) => {
     })
 });
 
-app.get('/top/tracks', (_, res, next) => {
-  auth.request('/top/tracks?limit=50')
+app.get('/top/tracks', (req, res, next) => {
+  const topTracks = parseInt(req.query.top_tracks) || 20;
+  const limit = topTracks <= 0 || topTracks > 50 ? 50 : topTracks;
+
+  auth.request(`/top/tracks?limit=${limit}`)
     .then(response => {
       res.send(
         response.items.map(item => ({
