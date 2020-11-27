@@ -62,7 +62,7 @@ app.get('/top/artists', (_, res) => {
 });
 
 app.get('/top/tracks', (_, res, next) => {
-  auth.request('/top/tracks')
+  auth.request('/top/tracks?limit=50')
     .then(response => {
       res.send(
         response.items.map(item => ({
