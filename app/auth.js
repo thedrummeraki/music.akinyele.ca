@@ -16,20 +16,25 @@ client.on("error", function (error) {
 });
 
 const request = async (endpoint, method, retry) => {
-  if (retry) {
-    console.warn('Retrying our request to', endpoint);
-  }
+  const requestMethod = method || "GET";
+
+  console.log(
+    `${new Date()}`,
+    requestMethod.toUpperCase(),
+    '\x1b[32m',
+    API_BASE_URL,
+    '\x1b[0m',
+    endpoint,
+  )
   const headers = {
     'Authorization': `Bearer ${(await accessToken(retry))}`,
   };
-
-  console.log(headers);
 
   try {
     const response = await axios.request({
       baseURL: API_BASE_URL,
       url: `/v1/me${endpoint}`,
-      method: method || "GET",
+      method: requestMethod,
       headers: headers,
     });
 

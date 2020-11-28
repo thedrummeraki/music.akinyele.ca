@@ -27,6 +27,17 @@ app.use((_, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', allowConnectFrom);
   next();
 });
+app.use(function (req, _, next) {
+  console.log(
+    `\n\n[${new Date()}]`,
+    '\x1b[36m',
+    req.method.toUpperCase(),
+    '\x1b[0m',
+    req.originalUrl,
+  )
+
+  next();
+});
 
 app.get('/authorize', (_, res) => {
   const authorizeURLParams = [
@@ -44,7 +55,7 @@ app.get('/authorize', (_, res) => {
 });
 
 app.get('/top/artists', (_, res) => {
-  auth.request('/top/artists')
+  auth.request('/top/artists?time_range=long_term')
     .then(response => {
       res.send(
         response.items.map(item => ({
@@ -61,8 +72,14 @@ app.get('/top/artists', (_, res) => {
     })
 });
 
-app.get('/top/tracks', (_, res, next) => {
-  auth.request('/top/tracks')
+app.get('/top/tracks', (req, res, next) => {
+  const topTracks = parseInt(req.query.top_tracks) || 20;
+  const limit = topTracks <= 0 ? 50 : topTracks;
+  const time_range = `${(req.query.time_range || 'medium')}_term`
+
+  //myTopTracks(140).then(items => console.log('GOT', items.length, ' item(s)!')).catch(e => console.log('error', e));
+
+  auth.request(`/top/tracks?limit=${limit}&time_range=${time_range}`)
     .then(response => {
       res.send(
         response.items.map(item => ({
@@ -82,6 +99,29 @@ app.get('/top/tracks', (_, res, next) => {
       res.send({ success: false, error: error });
     });
 });
+
+async function myTopTracks(limit) {
+  const tracks = [];
+  const pages = Math.floor(limit / 50);
+  const remainder = limit % 50;
+  let offset = 0;
+
+  const getSpotifyTracks = async (limit, offset) => {
+    const result = await auth.request(
+      `/top/tracks?limit=${limit}&offset=${offset}`
+    );
+    return result.items;
+  }
+
+  for (let i = 0; i < pages; i++) {
+    await getSpotifyTracks(50, offset).forEach(x => tracks.push(x));
+    offset += 50;
+  }
+
+  await getSpotifyTracks(remainder, offset).forEach(x => tracks.push(x));
+  
+  return tracks;
+}
 
 app.get('/top/genres', (_, res) => {
   auth.request('/top/artists')
@@ -107,19 +147,33 @@ app.get('/playing/now', (_, res) => {
   auth.request('/player/currently-playing')
     .then(response => {
       const track = response.item;
+      var result;
 
-      res.send({
-        id: track.id,
-        at: track.timestamp,
-        progress: (response.progress_ms / track.duration_ms) * 100,
-        name: track.name,
-        preview_url: track.preview_url,
-        artists: track.artists.map(artist => artist.name),
-        album: {
-          name: track.album.name,
-          image: track.album.images[0],
-        },
-      })
+      if (track) {
+        result = {
+          id: track.id,
+          at: track.timestamp,
+          progress: (response.progress_ms / track.duration_ms) * 100,
+          playing: response.is_playing,
+          name: track.name,
+          preview_url: track.preview_url,
+          artists: track.artists.map(artist => ({
+            name: artist.name,
+            id: artist.id,
+          })),
+          album: {
+            name: track.album.name,
+            image: track.album.images[0],
+          },
+        }
+      } else {
+        result = {
+          playing: false,
+        }
+      }
+
+      result.success = true;
+      res.send(result);
     })
     .catch(error => {
       console.error('error', error);
