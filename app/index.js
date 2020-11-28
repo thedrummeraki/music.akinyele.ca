@@ -27,6 +27,17 @@ app.use((_, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', allowConnectFrom);
   next();
 });
+app.use(function (req, _, next) {
+  console.log(
+    `\n\n[${new Date()}]`,
+    '\x1b[36m',
+    req.method.toUpperCase(),
+    '\x1b[0m',
+    req.originalUrl,
+  )
+
+  next();
+});
 
 app.get('/authorize', (_, res) => {
   const authorizeURLParams = [
@@ -63,9 +74,12 @@ app.get('/top/artists', (_, res) => {
 
 app.get('/top/tracks', (req, res, next) => {
   const topTracks = parseInt(req.query.top_tracks) || 20;
-  const limit = topTracks <= 0 || topTracks > 50 ? 50 : topTracks;
+  const limit = topTracks <= 0 ? 50 : topTracks;
+  const time_range = `${(req.query.time_range || 'medium')}_term`
 
-  auth.request(`/top/tracks?limit=${limit}`)
+  //myTopTracks(140).then(items => console.log('GOT', items.length, ' item(s)!')).catch(e => console.log('error', e));
+
+  auth.request(`/top/tracks?limit=${limit}&time_range=${time_range}`)
     .then(response => {
       res.send(
         response.items.map(item => ({
@@ -85,6 +99,29 @@ app.get('/top/tracks', (req, res, next) => {
       res.send({ success: false, error: error });
     });
 });
+
+async function myTopTracks(limit) {
+  const tracks = [];
+  const pages = Math.floor(limit / 50);
+  const remainder = limit % 50;
+  let offset = 0;
+
+  const getSpotifyTracks = async (limit, offset) => {
+    const result = await auth.request(
+      `/top/tracks?limit=${limit}&offset=${offset}`
+    );
+    return result.items;
+  }
+
+  for (let i = 0; i < pages; i++) {
+    await getSpotifyTracks(50, offset).forEach(x => tracks.push(x));
+    offset += 50;
+  }
+
+  await getSpotifyTracks(remainder, offset).forEach(x => tracks.push(x));
+  
+  return tracks;
+}
 
 app.get('/top/genres', (_, res) => {
   auth.request('/top/artists')
