@@ -55,7 +55,7 @@ app.get('/authorize', (_, res) => {
 });
 
 app.get('/top/artists', (_, res) => {
-  auth.request('/top/artists')
+  auth.request('/top/artists?time_range=long_term')
     .then(response => {
       res.send(
         response.items.map(item => ({
