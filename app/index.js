@@ -24,7 +24,9 @@ console.log(clientIDSecret);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use((_, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', allowConnectFrom);
+  allowConnectFrom.split(',').forEach((origin) => {
+    res.setHeader('Access-Control-Allow-Origin', origin.trim());
+  })
   next();
 });
 app.use(function (req, _, next) {
