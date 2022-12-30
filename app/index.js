@@ -156,6 +156,8 @@ app.get('/playing/now', (_, res) => {
           id: track.id,
           at: track.timestamp,
           progress: (response.progress_ms / track.duration_ms) * 100,
+          progress_ms: response.duration_ms,
+          duration_ms: track.duration_ms,
           playing: response.is_playing,
           name: track.name,
           preview_url: track.preview_url,
